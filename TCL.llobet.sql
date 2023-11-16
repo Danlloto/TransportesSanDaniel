@@ -34,6 +34,7 @@ begin
     savepoint sp2;
 	insert into facturas
     values (515,508,null,40,null,'2023-11-12',34464,181391);
+    rollback to sp1;
     commit;
 end$$
 
